@@ -15,6 +15,8 @@ apt-get install -y ruby1.9.1-dev
 gem install bundler --no-rdoc --no-ri
 gem install gitrob --no-rdoc --no-ri
 
+chmod 644 /var/lib/gems/1.9.1/gems/gitrob-0.0.3/public/javascripts/*.js
+
 # agreement
 gitrobversion=`gem list | grep gitrob | awk -vRS=")" -vFS="(" '{print $2}'`
 echo "user accepted" >/var/lib/gems/1.9.1/gems/gitrob-$gitrobversion/agreement
