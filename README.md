@@ -28,5 +28,6 @@ open http://127.0.0.1:9393
 
 ## Add own search patterns
 
-At the time of writing gitrob has the search patterns in the file `/var/lib/gems/1.9.1/gems/gitrob-0.0.3/patterns.json`.
-In this repo you can find a modified version that will be copied there while creating the VM.
+At the time of writing gitrob has the search patterns in the file `/var/lib/gems/1.9.1/gems/gitrob-0.0.4/patterns.json`.
+
+If you put a modified `patterns.json` beside the `Vagrantfile` then this will be copied inside the VM to be used.
